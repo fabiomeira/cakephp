@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: normal 62.5%/1.3em Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+header, section {
+	display: block;
+}
+
+header#topo {
+	width: 960px;
+	height: 79px;
+	background: transparent url(../img/back-topo.gif) repeat-x 0 0;
+	margin: 0 auto;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	box-shadow: 0 3px 7px #AAA;
+}
+
+header#topo img {
+	float: left;
+	margin: 7px 0 0 20px;
+}
+
+header#topo nav ul {
+	width: 640px;
+	height: 100%;
+	list-style: none;
+	margin: 0;
+}
+
+header#topo nav {
+	margin-top: 5px;
+}
+
+header#topo nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+
+}
+
+header#topo nav ul li {
+	float: left;
+	width: 25%;
+}
+
+body#home header#topo nav ul li#home a,
+body#assistencia header#topo nav ul li#assistencia a,
+
+body#portoes-veneziana header#topo nav ul li#portfolio a,
+body#portoes-tubulares header#topo nav ul li#portfolio a,
+body#portoes-ouro header#topo nav ul li#portfolio a,
+body#portoes-lambril header#topo nav ul li#portfolio a,
+body#portoes-madeira header#topo nav ul li#portfolio a,
+
+body#fale-conosco header#topo nav ul li#fale-conosco a {
+	background-image: url(../img/seta-menu.png);
+	background-repeat: no-repeat;
+	background-position: center 75%;
+	color: #fff;
+}
+
+header#topo nav ul li a {
+	background: transparent url(../img/back-menu.jpg) repeat-x 0 0;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 33px 0;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+header#topo nav ul li#fale-conosco a {
+	-moz-border-radius-topright:4px;
+	-moz-border-radius-bottomright::4px;
+
+	-webkit-border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+	
+header#topo nav ul li a:hover {
+	background: transparent url(../img/back-topo.gif) repeat-x 0 0;
+	color: #fff;
+}
+
+section#banner {
+	width: 940px;
+	height:350px;
+	margin: 10px auto;
+	background: #069;
+}
+
+
+div#corpo {
+	width: 920px;
+	height: 290px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+section#compromisso, section#trabalhos {
+	width: 43%;
+}
+
+section#compromisso div img {
+	float: right;
+	margin-left: 5px;
+}
+
+section#compromisso {
+	height: 100px;
+	float: left;
+}
+
+section#trabalhos {
+	float: right;
+	height: 100px;
+	margin-right: 45px;
+}
+
+section#compromisso div, section#trabalhos div {
+	width: 100%;
+	background: transparent url(../img/back-col-home.jpg) repeat-x;
+	border: 2px solid #f2f2f2;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius: 7px;
+	padding: 18px;
+	margin-top: 20px;
+	height: 200px;
+}
+
+section#compromisso h2, section#trabalhos h2 {
+	color: #313131;
+	text-shadow: 2px 2px 2px #CCC;
+	padding-bottom: 4px;
+	margin-left: 10px;
+}
+
+section#compromisso p, section#trabalhos p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #000;
+}
+
+section#compromisso p strong {
+	color: #ff8400;
+}
+
+.clear:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+footer#rodape {
+	background: transparent url(../img/back-rodape.jpg) repeat-x 0 0;
+	padding: 40px;
+	width: 100%;
+}
+
+footer#rodape p {
+	width: 960px;
+	color: #fff;
+	margin: 0 auto;
+	text-indent: 20px;
+	font-size: 12px;
+}
+
+footer#rodape p span {
+	float: right;
+	margin-right: 40px
+}
+
+
+/*Páginas internas*/
+div#corpo-int {
+	width: 880px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 40px
+}
+
+div#corpo-int h2 {
+	color: #313131;
+	text-shadow: 2px 2px 2px #CCC;
+	margin-left: 10px;
+	font-size: 1.8em;
+	border-bottom: 1px solid #CCC;
+	padding: 10px 0;
+	margin: 10px 0 20px 0;
+}
+
+div#corpo-int p {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-indent: 50px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+div#corpo-int img {
+	margin: 10px 0 10px 20px;;
+}
+
+nav#menu-portoes {
+	width: 28%;
+	float: left;
+}
+
+nav#menu-portoes ul {
+	list-style: none;
+	font-size: 1.2em;
+}
+
+nav#menu-portoes ul li a {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	border-left: 3px solid #036;
+	padding-left: 10px;
+	margin-bottom: 1px;
+}
+
+nav#menu-portoes ul li a:hover {
+	color: #fff;
+	background: #036;
+}
+
+aside#lista-portoes {
+	width: 65%;
+	float: right;
+	padding: 20px;
+}
+
+aside#lista-portoes img {
+	margin-left: 50px;
+}
+
+body#portoes-veneziana nav#menu-portoes ul li#veneziana a, body#portoes-tubulares nav#menu-portoes ul li#tubular a, body#portoes-ouro nav#menu-portoes ul li#ouro a, body#portoes-madeira nav#menu-portoes ul li#madeira a, body#portoes-lambril nav#menu-portoes ul li#lambril a {
+	background: #036;
+	color: #fff;
+}
+
+/*Formulário*/
+form {
+	margin:0;
+	padding:0;
+}
+fieldset {
+	margin-left:50px;
+	text-align:left;
+	padding:10px 40px;
+	border: 2px solid #ddd;
+	width:70%;
+}
+fieldset legend {
+	font-size:15px;
+	font-weight:bold;
+	padding: 15px 7px 15px 7px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left: -15px;
+	color: #b71b1b;
+	}
+form fieldset label {
+	display: block;
+	margin-top:10px;
+	font-size: 1.3em;
+	margin-top: 15px;
+}
+
+form fieldset span label {
+	font-size: 1em;
+}
+
+form fieldset input[type="text"],  form fieldset textarea {
+	padding:3px 4px;
+	border:1px solid #BBB;
+	width:450px;
+}
+form fieldset span {
+	display:block;
+	margin-top:10px;
+	font-size: 1.3em;
+}
+
+form fieldset textarea {
+	height:170px;
+	display:block;
+}
+
+input[type="submit"] {
+	margin: 0 156px 0 0;
+}
+
+input[type="submit"], input[type="reset"] {
+	float: right;
+	padding: 4px 8px;
+	background:#999;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #888;
+	color: #FFF;
+	cursor: pointer;
+}
+
+div#mapa {
+	width: 100%;
+	height: 500px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+h3#localizacao {
+	width: 860px;
+	margin: 0 auto;
+	padding: 10px 60px;
+	color: #555;
+}
+
+.lista-01 {
+	margin-top: 10px;
+	list-style: none;
+}
+
+.lista-01 li {
+	font-size: 1.3em;
+	padding: 5px 0 5px 45px;
+}
+
+.lista-01 li a {
+	text-decoration: none;
+	color: #222;
+}
+
+.lista-01 li a:hover {
+	text-decoration: underline;
+}
